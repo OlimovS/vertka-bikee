@@ -1,7 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-import {  Typography } from '@material-ui/core';
+import {  Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import grey from '@material-ui/core/colors/grey';
 
 import Nav from './Nav.js';
 import boyBike from '../assets/images/boyBike.png';
@@ -13,31 +14,46 @@ const useStyles = makeStyles(theme => ({
     height: '50vh',
     backgroundSize: 'cover',
     backgroundPosition: '50% 85%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    '& div': {
+      textAlign: 'center',
+      paddingTop: theme.spacing(4),
+    },
   },
   boy: {
-    backgroundImage: `linear-gradient(to right bottom, rgba(29, 97, 156, 0.5), rgba(29, 156, 121, 0.5)), url(${boyBike})`,
+    backgroundImage: `linear-gradient(to right bottom, rgba(29, 97, 156, 0.6), rgba(29, 156, 121, 0.5)), url(${boyBike})`,
   },
   girl: {
-    backgroundImage: `linear-gradient(to right bottom, rgba(156, 29, 120, 0.5), rgba(226, 14, 217, 0.56)), url(${girlBike})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(156, 29, 120, 0.5), rgba(226, 14, 217, 0.4)), url(${girlBike})`,
   },
-  [theme.breakpoints.up('sm')]: {
-    bike: {
-      height: '100vh',
-      backgroundPosition: '50% 70%',
-    },
 
-    wrapper: {
-      display: 'flex',
-    },
+  headText: {
+    color: '#ffffff',
+    fontFamily: 'HighTide,OpenSans-CondensedLight,AdobeInvisFont,MyriadPro-Regular'
   },
-  [theme.breakpoints.up('md')]: {
-    bike: {
-      height: '100vh',
-      backgroundPosition: '50% 70%',
-    },
-    wrapper: {
-      display: 'flex',
-    },
+  btnColor: {
+    color: grey[50],
+    backgroundColor: 'rgba(255, 255, 255, 0.15)',
+  },
+  gutterBottom: {
+    marginBottom: '18px',
+  },
+  ['@media(min-width: 750px)']: {
+      bike: {
+        height: '100vh',
+        backgroundPosition: '50% 70%',
+      },
+      wrapper: {
+        display: 'flex',
+      },
+  },
+  ['@media(min-width: 500px)']: {
+      bike: {
+        height: '100vh',
+        backgroundPosition: '50% 70%',
+      },
   },
 }));
 
@@ -50,8 +66,18 @@ function Header() {
       <Nav />
       <div className={classes.wrapper}>
         <div className={clsx(classes.bike, classes.boy)}>
+          <div>
+          <Typography className={classes.headText} variant='h2'>Fixies</Typography>
+          <Typography className={classes.headText} classes={{gutterBottom: classes.gutterBottom}} gutterBottom variant='h4'>Hisper style</Typography>
+          <Button size='large' className={classes.btnColor}>Choisir son modèle</Button>
+          </div>
         </div>
         <div className={clsx(classes.bike, classes.girl)}>
+          <div>
+          <Typography className={classes.headText} variant='h2'>Cruisers</Typography>
+          <Typography className={classes.headText} classes={{gutterBottom: classes.gutterBottom}} gutterBottom variant='h4'>Hippie style</Typography>
+          <Button size='large' className={classes.btnColor}>Choisir son modèle</Button>
+          </div>
         </div>
       </div>
     </>
