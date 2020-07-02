@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/vertka-bikee/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/vertka-bikee/static/js/main.1c6ac17f.chunk.js",
+    "main.js.map": "/vertka-bikee/static/js/main.1c6ac17f.chunk.js.map",
+    "runtime-main.js": "/vertka-bikee/static/js/runtime-main.65f04f05.js",
+    "runtime-main.js.map": "/vertka-bikee/static/js/runtime-main.65f04f05.js.map",
+    "static/js/2.1baadb23.chunk.js": "/vertka-bikee/static/js/2.1baadb23.chunk.js",
+    "static/js/2.1baadb23.chunk.js.map": "/vertka-bikee/static/js/2.1baadb23.chunk.js.map",
+    "index.html": "/vertka-bikee/index.html",
+    "precache-manifest.968cc56f60536f3f8a609309962b7319.js": "/vertka-bikee/precache-manifest.968cc56f60536f3f8a609309962b7319.js",
+    "service-worker.js": "/vertka-bikee/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/vertka-bikee/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.1baadb23.chunk.js.LICENSE.txt": "/vertka-bikee/static/js/2.1baadb23.chunk.js.LICENSE.txt",
+    "static/media/boyBike.png": "/vertka-bikee/static/media/boyBike.245d514e.png",
+    "static/media/girlBike.png": "/vertka-bikee/static/media/girlBike.91f33c56.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65f04f05.js",
+    "static/js/2.1baadb23.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.1c6ac17f.chunk.js"
+  ]
+}
